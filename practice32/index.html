@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice 32 - Find middle of string</title>
+    <script>
+        function middleOfString (str) {
+            var word = [];
+            var middleCharacter;
+            for (var i = 0; i < str.length; i++) {
+                word.push(str[i]);
+            }
+            var wordMiddleIndex = word.length % 2;
+            if (wordMiddleIndex !== 0) {
+                middleCharacter = word[Math.floor(word.length / 2)];
+            } else if (wordMiddleIndex === 0) {
+                middleCharacter = [];
+                middleCharacter.push(word[(word.length/2) - 1 ]);
+                middleCharacter.push(word[word.length/2]);
+            }
+            return middleCharacter;
+        }
+        console.log(middleOfString('onomatopoeia'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
