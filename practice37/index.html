@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice 37</title>
+    <script>
+        function alternateCaps (str) {
+            var wordStorage = [];
+            var newLetter;
+            for (var strIndex = 0; strIndex < str.length; strIndex++) {
+                wordStorage.push(str[strIndex]);
+            }
+            for (var newWordIndex = 1; newWordIndex < wordStorage.length; newWordIndex+=2) {
+                wordStorage[newWordIndex] = wordStorage[newWordIndex].toUpperCase();
+            }
+            return wordStorage.join("");
+        }
+        console.log(alternateCaps("amazing"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
